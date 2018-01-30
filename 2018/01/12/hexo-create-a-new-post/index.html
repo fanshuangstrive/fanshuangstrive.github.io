@@ -5,14 +5,18 @@
   
 
   
-  <title>GrowUp</title>
+  <title>hexo-create_a_new-post.md | GrowUp</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="GrowUp">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="elcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo-create_a_new-post.md">
+<meta property="og:url" content="http://yoursite.com/2018/01/12/hexo-create-a-new-post/index.html">
 <meta property="og:site_name" content="GrowUp">
+<meta property="og:description" content="elcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:updated_time" content="2018-01-30T07:59:44.662Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GrowUp">
+<meta name="twitter:title" content="hexo-create_a_new-post.md">
+<meta name="twitter:description" content="elcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
   
     <link rel="alternate" href="/atom.xml" title="GrowUp" type="application/atom+xml">
   
@@ -59,52 +63,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-hexo-init-first" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/01/12/hexo-init-first/" class="article-date">
-  <time datetime="2018-01-12T07:57:21.000Z" itemprop="datePublished">2018-01-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/12/hexo-init-first/">hexo-init-first.md</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="1-背景："><a href="#1-背景：" class="headerlink" title="1.背景："></a>1.背景：</h4><p>Hexo搭建博客之后用git已经将所有的source都同步到了git上，在另一台电脑上将源代码clone下来之后，直接执行 hexo server,出现<br>错误</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ERROR Local hexo not found in E:\blog</span><br><span class="line">ERROR Try running: &apos;npm install hexo --save&apos;</span><br></pre></td></tr></table></figure>
-<h4 id="2-解决方案："><a href="#2-解决方案：" class="headerlink" title="2.解决方案："></a>2.解决方案：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd E:\blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<h4 id="3-原因-："><a href="#3-原因-：" class="headerlink" title="3.原因 ："></a>3.原因 ：</h4><p>.gitignore文件里面忽略了node_modules文件夹，所以这个文件夹没有更新上去。所以用npm重新安装即可。</p>
-<p>(建议每次都按照如下步骤部署)：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-<p>注意deploy的过程中要输入你的username及passward。如下</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/12/hexo-init-first/" data-id="cjd1crswv00019cx9vtmxyrlo" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hexo-create-a-new-post" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-hexo-create-a-new-post" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/01/12/hexo-create-a-new-post/" class="article-date">
   <time datetime="2018-01-12T07:53:47.000Z" itemprop="datePublished">2018-01-12</time>
@@ -117,8 +76,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/12/hexo-create-a-new-post/">hexo-create_a_new-post.md</a>
+    <h1 class="article-title" itemprop="name">
+      hexo-create_a_new-post.md
     </h1>
   
 
@@ -142,11 +101,23 @@
     </footer>
   </div>
   
-</article>
-
+    
+<nav id="article-nav">
+  
+    <a href="/2018/01/12/hexo-init-first/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          hexo-init-first.md
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
   
-
+</article>
 
 </section>
         
