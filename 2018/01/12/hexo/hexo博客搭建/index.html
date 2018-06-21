@@ -6,12 +6,12 @@
     <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="keyword"  content="">
+    <meta name="keyword"  content="关键词">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
     <title>
         
-        hexo博客搭建 - undefined
+        hexo博客搭建 - Aaron的博客 | Aaron&#39;s Blog
         
     </title>
 
@@ -78,6 +78,13 @@
                 </a>
             </li>
             
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
         </ul>
     </div>
     
@@ -130,7 +137,7 @@
 </span>
     </div>
     <div class="post-content ">
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">主题参考</span><br><span class="line">https://github.com/aircloud/hexo-aircloud-blog</span><br></pre></td></tr></table></figure>
+        <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">主题参考</span><br><span class="line">https:<span class="regexp">//gi</span>thub.com<span class="regexp">/aircloud/</span>hexo-aircloud-blog</span><br></pre></td></tr></table></figure>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># .gitignore文件里面忽略了node_modules文件夹</span></span><br><span class="line"><span class="comment">#(建议每次都按照如下步骤部署)：</span></span><br><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br><span class="line"><span class="variable">$hexo</span> clean</span><br><span class="line"><span class="variable">$hexo</span> generate  <span class="comment">#Generate static files</span></span><br><span class="line"><span class="variable">$hexo</span> deploy    <span class="comment">#Deploy to remote sites</span></span><br><span class="line">$ hexo d</span><br><span class="line"><span class="comment">#如果出现错误 ERROR Deployer not found: git</span></span><br><span class="line"><span class="comment">#cmd命令行 切换到git clone的目录下，</span></span><br><span class="line"><span class="comment">#执行 npm install --save hexo-deployer-git</span></span><br><span class="line"><span class="comment">#执行 npm install hexo --save</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">$ hexo server  <span class="comment">##Run server 可选</span></span><br></pre></td></tr></table></figure>
 <p>注意deploy的过程中要输入你的username及passward。如下</p>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
@@ -145,7 +152,7 @@
         <button id="donate-button">赞赏</button>
     </div>
     <div class="donate-img-container hide" id="donate-img-container">
-        <img id="donate-img" src="" data-src="/">
+        <img id="donate-img" src="" data-src="/images/donate.jpg">
         <p> 感谢鼓励 </p>
     </div>
 </div>
@@ -169,7 +176,7 @@
 
         
         <li>
-            <a target="_blank"  href="https://github.com/AirCloud">
+            <a target="_blank"  href="https://github.com/fanshuangstrive">
                             <span class="fa-stack fa-lg">
                                 <i class="iconfont icon-github"></i>
                             </span>
@@ -180,6 +187,20 @@
         
 
     </ul>
+    
+    <p>
+        <span>/</span>
+        
+        <span><a href="https://fanshuangstrive.github.io/">website</a></span>
+        <span>/</span>
+        
+        <span><a href="https://fanshuangstrive.github.io/">Aaron&#39;s Page</a></span>
+        <span>/</span>
+        
+        <span><a href="#">It helps SEO</a></span>
+        <span>/</span>
+        
+    </p>
     
     <p>
         <span id="busuanzi_container_site_pv">
@@ -198,12 +219,26 @@
 
 <script>
     // We expose some of the variables needed by the front end
-    window.hexo_search_path = ""
+    window.hexo_search_path = "search.json"
     window.hexo_root = "/"
     window.isPost = true
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/js/gitment.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: 'hexo博客搭建',
+        owner: 'aircloud',
+        repo: 'hexo-aircloud-blog',
+        oauth: {
+            client_id: 'your-id-created-by-https://github.com/settings/applications/new',
+            client_secret: 'your-secret-created-by-https://github.com/settings/applications/new',
+        },
+    })
+    gitment.render('comment-container')
+</script>
 
 </html>

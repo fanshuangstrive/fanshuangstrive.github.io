@@ -6,12 +6,12 @@
     <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="keyword"  content="">
+    <meta name="keyword"  content="关键词">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
     <title>
         
-        About - undefined
+        About - Aaron的博客 | Aaron&#39;s Blog
         
     </title>
 
@@ -78,6 +78,13 @@
                 </a>
             </li>
             
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
         </ul>
     </div>
     
@@ -116,7 +123,7 @@
         <button id="donate-button">赞赏</button>
     </div>
     <div class="donate-img-container hide" id="donate-img-container">
-        <img id="donate-img" src="" data-src="/">
+        <img id="donate-img" src="" data-src="/images/donate.jpg">
         <p> 感谢鼓励 </p>
     </div>
 </div>
@@ -140,7 +147,7 @@
 
         
         <li>
-            <a target="_blank"  href="https://github.com/AirCloud">
+            <a target="_blank"  href="https://github.com/fanshuangstrive">
                             <span class="fa-stack fa-lg">
                                 <i class="iconfont icon-github"></i>
                             </span>
@@ -151,6 +158,20 @@
         
 
     </ul>
+    
+    <p>
+        <span>/</span>
+        
+        <span><a href="https://fanshuangstrive.github.io/">website</a></span>
+        <span>/</span>
+        
+        <span><a href="https://fanshuangstrive.github.io/">Aaron&#39;s Page</a></span>
+        <span>/</span>
+        
+        <span><a href="#">It helps SEO</a></span>
+        <span>/</span>
+        
+    </p>
     
     <p>
         <span id="busuanzi_container_site_pv">
@@ -169,12 +190,26 @@
 
 <script>
     // We expose some of the variables needed by the front end
-    window.hexo_search_path = ""
+    window.hexo_search_path = "search.json"
     window.hexo_root = "/"
     window.isPost = false
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/js/gitment.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: 'About',
+        owner: 'aircloud',
+        repo: 'hexo-aircloud-blog',
+        oauth: {
+            client_id: 'your-id-created-by-https://github.com/settings/applications/new',
+            client_secret: 'your-secret-created-by-https://github.com/settings/applications/new',
+        },
+    })
+    gitment.render('comment-container')
+</script>
 
 </html>
